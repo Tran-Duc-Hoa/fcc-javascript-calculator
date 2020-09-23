@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 
+
+function parse(str) {
+  return Function(`'use strict'; return (${str})`)()
+}
+
 function App() {
 
   const [input, setInput] = useState("");
@@ -16,8 +21,8 @@ function App() {
 
   function calculate(e) {
     try {
-      setResult(eval(input).toString());
-      setInput(input + e.target.name + eval(input).toString());
+      setResult(parse(input).toString());
+      setInput(input + e.target.name + parse(input).toString());
     } catch (error) {
       setResult("error");
     }
