@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  position: relative;
+  width: 320px;
+  padding: 5px;
+  background-color: #000;
+}
+
+.formulaScreen {
+  height: 30px;
+  background-color: #000;
+  color: yellowgreen;
+}
+
+#display {
+  height: 50px;
+  background-color: #000;
+  color: white;
+}
+
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black;
+  border: none;
+  background: #4d4d4d;
+  font-size: 20px;
+}
+
+#clear {
+  background-color: red;
+}
+
+.jumbo {
+  width: 160px;
+  
+}
+
+#equals {
+  position: absolute;
+  bottom: 5px;
+  height: 130px;
+  background: blue;
+}
+
+.operator {
+  background: rgb(102, 102, 102);
+}
